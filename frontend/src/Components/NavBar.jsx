@@ -18,7 +18,7 @@ const NavBar = ({setAuth}) => {
       const token = localStorage.getItem("jwt"); // Get token from local storage
 
       try {
-        const url = `http://localhost:4444/user`;
+        const url = `https://interior-design-backend-self.vercel.app/user`;
         const response = await axios.get(url, {
           headers: {
             Authorization: `Bearer ${token}`, // Set the Authorization header

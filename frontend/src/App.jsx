@@ -25,7 +25,7 @@ const InteriorDesignPlatform = () => {
 
   const isAuthorized = async () => {
     try {
-      const url = `http://localhost:4444/isAuthorized`;
+      const url = `https://interior-design-backend-self.vercel.app/isAuthorized`;
       const response = await axios.get(url, {
         headers: { Authorization: `Bearer ${localStorage.getItem("jwt")}` },
       });

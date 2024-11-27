@@ -40,7 +40,7 @@ const Register = () => {
     }
 
     try {
-      const url = `http://localhost:4444/register`;
+      const url = `https://interior-design-backend-self.vercel.app/register`;
       const response = await axios.post(url, formdata);
   
       if (response.status === 200) {

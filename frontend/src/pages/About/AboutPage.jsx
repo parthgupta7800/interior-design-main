@@ -28,7 +28,7 @@ const AboutPage = () => {
   const submitContactForm = async (event) => {
     event.preventDefault();
     try {
-      const url = `http://localhost:4444/aboutForm`;
+      const url = `https://interior-design-backend-self.vercel.app/aboutForm`;
       const response = await axios.post(url, aboutPayload);
   
       if (response.status === 200) {
