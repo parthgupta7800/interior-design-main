@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 const app = express();
 
 app.use(cors({
-origin: "http://localhost:5173", // Frontend origin
+origin: "https://interior-design-frontend-mu.vercel.app", // Frontend origin
   methods: ["GET", "POST"],
   allowedHeaders: ["Authorization", "Content-Type"],}))
 
